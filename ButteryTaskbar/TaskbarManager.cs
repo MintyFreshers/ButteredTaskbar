@@ -256,10 +256,18 @@ public class TaskbarManager : IDisposable
                         dwFlags = 0
                     }
                 };
-                NativeMethods.SendInput(1, ref input, Marshal.SizeOf<NativeMethods.INPUT>());
+                uint result = NativeMethods.SendInput(1, ref input, Marshal.SizeOf<NativeMethods.INPUT>());
+                if (result != 1)
+                {
+                    System.Diagnostics.Debug.WriteLine("Failed to send Win key down");
+                }
                 
                 input.ki.dwFlags = NativeMethods.KEYEVENTF_KEYUP;
-                NativeMethods.SendInput(1, ref input, Marshal.SizeOf<NativeMethods.INPUT>());
+                result = NativeMethods.SendInput(1, ref input, Marshal.SizeOf<NativeMethods.INPUT>());
+                if (result != 1)
+                {
+                    System.Diagnostics.Debug.WriteLine("Failed to send Win key up");
+                }
                 
                 _winKeyPressRequested = false;
             }

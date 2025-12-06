@@ -201,7 +201,7 @@ public class TrayIconManager : IDisposable
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to set auto-launch: {ex.Message}");
+            Debug.WriteLine($"Failed to set auto-launch: {ex.Message}");
         }
     }
     
@@ -240,7 +240,7 @@ public class TrayIconManager : IDisposable
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to check for updates: {ex.Message}");
+            Debug.WriteLine($"Failed to check for updates: {ex.Message}");
         }
     }
     
@@ -268,7 +268,7 @@ public class TrayIconManager : IDisposable
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to open URL: {ex.Message}");
+            Debug.WriteLine($"Failed to open URL: {ex.Message}");
         }
     }
     

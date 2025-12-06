@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace ButteryTaskbar;
 
 /// <summary>
@@ -40,7 +42,7 @@ public class AppConfig
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to save config: {ex.Message}");
+            Debug.WriteLine($"Failed to save config: {ex.Message}");
         }
     }
     
@@ -59,7 +61,7 @@ public class AppConfig
             var version = reader.ReadInt64();
             if (version < 1 || version > ConfigVersion)
             {
-                Console.WriteLine($"Unsupported config version: {version}");
+                Debug.WriteLine($"Unsupported config version: {version}");
                 return;
             }
             
@@ -75,7 +77,7 @@ public class AppConfig
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to load config: {ex.Message}");
+            Debug.WriteLine($"Failed to load config: {ex.Message}");
         }
     }
     
