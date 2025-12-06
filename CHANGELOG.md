@@ -1,4 +1,20 @@
 
+## 2.3.1 C# Conversion Edition
+December 2024
+
+- **Major Change**: Converted entire project from Jai to C# / .NET 8.0
+  - Easier to build and maintain
+  - More accessible to contributors
+  - Better IDE support and tooling
+  - Maintains all original functionality
+- All features from version 2.2.0 are preserved:
+  - Taskbar hiding functionality
+  - Keyboard shortcuts (Win key, Ctrl+Win+F11)
+  - Mouse scroll activation
+  - Tray icon menu with settings
+  - Auto-start configuration
+  - Update checking
+
 ## 2.2.0 Peak User Experience Edition
 23 July 2021
 
