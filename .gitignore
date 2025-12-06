@@ -5,3 +5,14 @@
 *.obj
 *.pdb
 local_environment.jai
+
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.cache
+.vs/
+*.dll
+*.deps.json
+*.runtimeconfig.json

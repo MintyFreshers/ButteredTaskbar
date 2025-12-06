@@ -10,6 +10,8 @@ Save space on your screen by hiding the taskbar when it's not needed. This goes 
 
 This is the successor to the original [Buttery Taskbar](https://github.com/CrypticButter/ButteryTaskbar) where you will find further rationale for this program. Version 2 has lower CPU and memory usage, and should work more reliably overall.
 
+**This version has been converted to C# / .NET** for easier maintenance and broader accessibility.
+
 <img width="260"
      align="right"
      src="https://github.com/LuisThiamNye/miscellaneous-media/blob/f1283d276b8d6d0a9899d2a7c9c3baca74ca3c8b/buttery-taskbar-screenshot-2.3.0.png">
@@ -23,6 +25,38 @@ This is the successor to the original [Buttery Taskbar](https://github.com/Crypt
 - Tray icon for accessing the settings menu, which also shows available software updates.
 - Enable or disable functionality with the shortcut: `Ctrl` + `Win` + `F11` (optional, disabled by default).
 - Option to automatically enable/disable Windows taskbar auto-hide when disabling Buttery Taskbar.
+
+## Building from Source
+
+This project is now built with .NET 8.0 and C#. To build:
+
+### Prerequisites
+
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- Windows OS (required for Windows Forms and native Windows API calls)
+
+### Build Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MintyFreshers/ButteredTaskbar.git
+   cd ButteredTaskbar
+   ```
+
+2. Build the project:
+   ```bash
+   cd ButteryTaskbar
+   dotnet build -c Release
+   ```
+
+3. The executable will be in:
+   ```
+   ButteryTaskbar/bin/Release/net8.0-windows/buttery-taskbar.exe
+   ```
+
+### Running
+
+Simply run the `buttery-taskbar.exe` file. The application will start in the system tray.
 
 ## Installation
 

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>buttery-taskbar</AssemblyName>
+    <Product>Buttery Taskbar</Product>
+    <Version>2.3.1</Version>
+    <Authors>LuisThiamNye</Authors>
+    <Company>Buttery Taskbar</Company>
+    <Copyright>Copyright © 2021-2024</Copyright>
+    <Description>Save space on your screen by hiding the taskbar when it's not needed.</Description>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+</Project>
